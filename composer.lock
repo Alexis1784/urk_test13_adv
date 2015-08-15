@@ -4,47 +4,23 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "687717086ed175625a9f9abd120c2ed9",
+    "hash": "21a41a18eb920f76dd513d3ceb866140",
     "packages": [
         {
-            "name": "almasaeed2010/adminlte",
-            "version": "v2.2.1",
+            "name": "bower-asset/admin-lte",
+            "version": "1.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/almasaeed2010/AdminLTE.git",
-                "reference": "5e57d8f4c182a844b0d2cb80107e0f413f9e63a8"
+                "reference": "5b7d35a2f2c0ee1b8e6cd7acfa235c497f3f616a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/almasaeed2010/AdminLTE/zipball/5e57d8f4c182a844b0d2cb80107e0f413f9e63a8",
-                "reference": "5e57d8f4c182a844b0d2cb80107e0f413f9e63a8",
+                "url": "https://api.github.com/repos/almasaeed2010/AdminLTE/zipball/5b7d35a2f2c0ee1b8e6cd7acfa235c497f3f616a",
+                "reference": "5b7d35a2f2c0ee1b8e6cd7acfa235c497f3f616a",
                 "shasum": ""
             },
-            "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Abdullah Almsaeed",
-                    "email": "support@almsaeedstudio.com"
-                }
-            ],
-            "description": "AdminLTE - admin control panel and dashboard that's based on Bootstrap 3",
-            "homepage": "http://almsaeedstudio.com/",
-            "keywords": [
-                "JS",
-                "admin",
-                "back-end",
-                "css",
-                "less",
-                "responsive",
-                "template",
-                "theme",
-                "web"
-            ],
-            "time": "2015-08-08 17:29:58"
+            "type": "bower-asset-library"
         },
         {
             "name": "bower-asset/bootstrap",
@@ -96,24 +72,24 @@
             ]
         },
         {
-            "name": "bower-asset/fontawesome",
-            "version": "v4.3.0",
+            "name": "bower-asset/font-awesome",
+            "version": "v4.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FortAwesome/Font-Awesome.git",
-                "reference": "41b9ed01103e6820c3cb043ba7ddab30ecd3f4c0"
+                "reference": "e554555d73a44e0a7d11b0361ad7a5325a5f551c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/41b9ed01103e6820c3cb043ba7ddab30ecd3f4c0",
-                "reference": "41b9ed01103e6820c3cb043ba7ddab30ecd3f4c0",
+                "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/e554555d73a44e0a7d11b0361ad7a5325a5f551c",
+                "reference": "e554555d73a44e0a7d11b0361ad7a5325a5f551c",
                 "shasum": ""
             },
             "type": "bower-asset-library",
             "extra": {
                 "bower-asset-main": [
-                    "./css/font-awesome.css",
-                    "./fonts/*"
+                    "less/font-awesome.less",
+                    "scss/font-awesome.scss"
                 ],
                 "bower-asset-ignore": [
                     "*/.*",
@@ -394,31 +370,26 @@
         },
         {
             "name": "dmstr/yii2-adminlte-asset",
-            "version": "2.1.3",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dmstr/yii2-adminlte-asset.git",
-                "reference": "c5d2ea94209a2b087348ea9ee8fda11eedf943b6"
+                "reference": "750bf2fa9d6fbaa0c90ed7aed542a56209b92e56"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dmstr/yii2-adminlte-asset/zipball/c5d2ea94209a2b087348ea9ee8fda11eedf943b6",
-                "reference": "c5d2ea94209a2b087348ea9ee8fda11eedf943b6",
+                "url": "https://api.github.com/repos/dmstr/yii2-adminlte-asset/zipball/750bf2fa9d6fbaa0c90ed7aed542a56209b92e56",
+                "reference": "750bf2fa9d6fbaa0c90ed7aed542a56209b92e56",
                 "shasum": ""
             },
             "require": {
-                "almasaeed2010/adminlte": "~2.0",
+                "bower-asset/admin-lte": "~1.3",
+                "bower-asset/font-awesome": "~4.0",
                 "cebe/yii2-gravatar": "1.*",
-                "rmrevin/yii2-fontawesome": "~2.9",
                 "yiisoft/yii2": "2.*",
                 "yiisoft/yii2-bootstrap": "2.*"
             },
             "type": "yii2-extension",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.0.x-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "dmstr\\": ""
@@ -444,7 +415,7 @@
                 "extension",
                 "yii2"
             ],
-            "time": "2015-06-25 01:41:38"
+            "time": "2015-03-20 13:33:22"
         },
         {
             "name": "ezyang/htmlpurifier",
@@ -489,58 +460,6 @@
                 "html"
             ],
             "time": "2013-11-30 08:25:19"
-        },
-        {
-            "name": "rmrevin/yii2-fontawesome",
-            "version": "2.11.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/rmrevin/yii2-fontawesome.git",
-                "reference": "8786dbfe1edfc0b25aed9e25461ec4e4e37a1d15"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/rmrevin/yii2-fontawesome/zipball/8786dbfe1edfc0b25aed9e25461ec4e4e37a1d15",
-                "reference": "8786dbfe1edfc0b25aed9e25461ec4e4e37a1d15",
-                "shasum": ""
-            },
-            "require": {
-                "bower-asset/fontawesome": "4.3.*",
-                "php": ">=5.4.0",
-                "yiisoft/yii2": "2.0.*"
-            },
-            "type": "yii2-extension",
-            "extra": {
-                "asset-installer-paths": {
-                    "npm-asset-library": "vendor/npm",
-                    "bower-asset-library": "vendor/bower"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "rmrevin\\yii\\fontawesome\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Roman Revin",
-                    "email": "xgismox@gmail.com",
-                    "homepage": "http://rmrevin.ru/"
-                }
-            ],
-            "description": "Asset Bundle for Yii2 with Font Awesome",
-            "keywords": [
-                "asset",
-                "awesome",
-                "bundle",
-                "font",
-                "yii"
-            ],
-            "time": "2015-06-29 09:47:23"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -833,40 +752,64 @@
     ],
     "packages-dev": [
         {
-            "name": "bower-asset/admin-lte",
-            "version": "1.3.1",
+            "name": "almasaeed2010/adminlte",
+            "version": "v2.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/almasaeed2010/AdminLTE.git",
-                "reference": "5b7d35a2f2c0ee1b8e6cd7acfa235c497f3f616a"
+                "reference": "5e57d8f4c182a844b0d2cb80107e0f413f9e63a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/almasaeed2010/AdminLTE/zipball/5b7d35a2f2c0ee1b8e6cd7acfa235c497f3f616a",
-                "reference": "5b7d35a2f2c0ee1b8e6cd7acfa235c497f3f616a",
+                "url": "https://api.github.com/repos/almasaeed2010/AdminLTE/zipball/5e57d8f4c182a844b0d2cb80107e0f413f9e63a8",
+                "reference": "5e57d8f4c182a844b0d2cb80107e0f413f9e63a8",
                 "shasum": ""
             },
-            "type": "bower-asset-library"
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Abdullah Almsaeed",
+                    "email": "support@almsaeedstudio.com"
+                }
+            ],
+            "description": "AdminLTE - admin control panel and dashboard that's based on Bootstrap 3",
+            "homepage": "http://almsaeedstudio.com/",
+            "keywords": [
+                "JS",
+                "admin",
+                "back-end",
+                "css",
+                "less",
+                "responsive",
+                "template",
+                "theme",
+                "web"
+            ],
+            "time": "2015-08-08 17:29:58"
         },
         {
-            "name": "bower-asset/font-awesome",
-            "version": "v4.4.0",
+            "name": "bower-asset/fontawesome",
+            "version": "v4.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FortAwesome/Font-Awesome.git",
-                "reference": "e554555d73a44e0a7d11b0361ad7a5325a5f551c"
+                "reference": "41b9ed01103e6820c3cb043ba7ddab30ecd3f4c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/e554555d73a44e0a7d11b0361ad7a5325a5f551c",
-                "reference": "e554555d73a44e0a7d11b0361ad7a5325a5f551c",
+                "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/41b9ed01103e6820c3cb043ba7ddab30ecd3f4c0",
+                "reference": "41b9ed01103e6820c3cb043ba7ddab30ecd3f4c0",
                 "shasum": ""
             },
             "type": "bower-asset-library",
             "extra": {
                 "bower-asset-main": [
-                    "less/font-awesome.less",
-                    "scss/font-awesome.scss"
+                    "./css/font-awesome.css",
+                    "./fonts/*"
                 ],
                 "bower-asset-ignore": [
                     "*/.*",
@@ -997,6 +940,58 @@
             ],
             "description": "A comprehensive library for generating differences between two hashable objects (strings or arrays).",
             "time": "2013-11-01 13:02:21"
+        },
+        {
+            "name": "rmrevin/yii2-fontawesome",
+            "version": "2.11.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rmrevin/yii2-fontawesome.git",
+                "reference": "8786dbfe1edfc0b25aed9e25461ec4e4e37a1d15"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rmrevin/yii2-fontawesome/zipball/8786dbfe1edfc0b25aed9e25461ec4e4e37a1d15",
+                "reference": "8786dbfe1edfc0b25aed9e25461ec4e4e37a1d15",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/fontawesome": "4.3.*",
+                "php": ">=5.4.0",
+                "yiisoft/yii2": "2.0.*"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "asset-installer-paths": {
+                    "npm-asset-library": "vendor/npm",
+                    "bower-asset-library": "vendor/bower"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "rmrevin\\yii\\fontawesome\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Roman Revin",
+                    "email": "xgismox@gmail.com",
+                    "homepage": "http://rmrevin.ru/"
+                }
+            ],
+            "description": "Asset Bundle for Yii2 with Font Awesome",
+            "keywords": [
+                "asset",
+                "awesome",
+                "bundle",
+                "font",
+                "yii"
+            ],
+            "time": "2015-06-29 09:47:23"
         },
         {
             "name": "yiisoft/yii2-codeception",
